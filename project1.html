@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-threaded Programming in Java</title>
+</head>
+<body>
+  <header>
+    <h1>Multi-threaded Programming in Java</h1>
+  </header>
+
+  <main>
+    <figure>
+      <img src="images/project1image.png" alt="Screenshot of the train yard and the Area of CTC focus outside of Yard." width="800" />
+      <figcaption>Project Illustration.</figcaption>
+    </figure>
+
+    <section aria-labelledby="description">
+      <h2 id="description">Description</h2>
+      <p>
+        This project simulates a real-world train switch yard using multi-threaded programming in Java. Each train is modeled as an independent thread that must acquire exclusive access to a specific sequence of switches before moving through the yard. To prevent deadlock, trains must acquire switches in a fixed order and release all locks if any required switch is unavailable.     The simulation reads its configuration from CSV files that define the train fleet and the valid switch-yard paths. Java’s ExecutorService is used to manage concurrent train threads, and ReentrantLock objects control access to shared switch resources. The program outputs detailed status messages showing lock acquisition, waiting behavior, train dispatching, and final system state.
+      </p>
+    </section>
+
+    <section aria-labelledby="skillslearned">
+      <h2 id="skillslearned">Skills Learned</h2>
+      <ul>
+        <li>Multi-threaded programming in Java</li>
+        <li>Thread synchronization using ReentrantLock</li>
+        <li>Deadlock prevention through ordered resource acquisition</li>
+        <li>Concurrent task management with ExecutorService</li>
+        <li>File input processing using CSV configuration files</li>
+        <li>Debugging and analyzing concurrent system behavior</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Resume</a></p>
+  </footer>
+</body>
+</html>
