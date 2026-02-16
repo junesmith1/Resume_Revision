@@ -68,7 +68,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
@@ -97,16 +97,17 @@ article {
 
 h2 {
   margin: 0 0 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
 }
 
 h3 {
   margin: 0.5rem 0 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3 {
   font-family: "Baskerville", "Baskerville Old Face", "Garamond", serif;
+  letter-spacing: 1.5px;
 }
 
 p {
@@ -166,21 +167,26 @@ footer p {
 
 @media (min-width: 900px) {
   main {
-    grid-template-columns: 1.1fr 0.9fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: start;
+    gap: 1.5rem;
   }
 
-  #objective { grid-column: 1; }
-  #projects { grid-column: 1; }
-  #education { grid-column: 2; }
-  #skills { grid-column: 2; }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
+  #objective,
+  #projects {
+    grid-column: 1;
   }
+
+  #education,
+  #skills {
+    grid-column: 2;
+  }
+
+  section {
+    margin: 0;
+  }
+}
 
   header p {
     margin-top: 0;
